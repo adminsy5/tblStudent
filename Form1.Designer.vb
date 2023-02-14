@@ -382,7 +382,7 @@ Partial Class Form1
         Me.Controls.Add(Me.DataGridViewReader)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "STUD INFO v2.0"
         CType(Me.DataGridViewReader, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
