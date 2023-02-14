@@ -1,6 +1,4 @@
 ﻿Imports System.Data.SqlClient
-Imports System.Windows.Forms.VisualStyles
-Imports System.Diagnostics
 Public Class Form1
     Dim conStr As String = "Data Source=MPIYUSH3510-AMD;Initial Catalog=Admin574;Integrated Security=true"
     Dim sqlCmd As SqlCommand
@@ -75,6 +73,7 @@ Public Class Form1
         CreatetblStudent()
         InsertIntotblStudent()
         ShowDataFromtblStudent()
+        ButtonClear_Click(sender, e)
     End Sub
 
     Public Sub CreatetblStudent()
@@ -83,7 +82,7 @@ Public Class Form1
             sqlCmd.ExecuteNonQuery()
             MsgBox("Table Created !")
         Catch ec As Exception
-            MsgBox(ec.Message)
+            'MsgBox(ec.Message)
         End Try
     End Sub
 
@@ -117,7 +116,7 @@ Public Class Form1
         End Try
 
         Try
-            sqlCmd = New SqlCommand("update tblstudent set per=(android+java+iot+is1+dotnet)/5", Connection)
+            sqlCmd = New SqlCommand("update tblstudent set per=(android+java+iot+is1+dotnet)/5.0", Connection)
             sqlCmd.ExecuteNonQuery()
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -305,8 +304,6 @@ Public Class Form1
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-
-
 
         Try
             sqlCmd = New SqlCommand("select * from tblStudent where sid = '" & TextBoxSid.Text & "'", Connection)

@@ -205,56 +205,74 @@ Partial Class Form1
         '
         'ButtonSave
         '
-        Me.ButtonSave.Location = New System.Drawing.Point(708, 212)
+        Me.ButtonSave.Image = Global.tblStudent.My.Resources.Resources.save_32
+        Me.ButtonSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonSave.Location = New System.Drawing.Point(708, 222)
         Me.ButtonSave.Name = "ButtonSave"
-        Me.ButtonSave.Size = New System.Drawing.Size(150, 46)
+        Me.ButtonSave.Size = New System.Drawing.Size(106, 46)
         Me.ButtonSave.TabIndex = 21
         Me.ButtonSave.Text = "Save"
+        Me.ButtonSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ButtonSave.UseVisualStyleBackColor = True
         '
         'ButtonRefresh
         '
-        Me.ButtonRefresh.Location = New System.Drawing.Point(1038, 356)
+        Me.ButtonRefresh.Image = Global.tblStudent.My.Resources.Resources.refresh_32
+        Me.ButtonRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonRefresh.Location = New System.Drawing.Point(1038, 357)
         Me.ButtonRefresh.Name = "ButtonRefresh"
-        Me.ButtonRefresh.Size = New System.Drawing.Size(150, 46)
+        Me.ButtonRefresh.Size = New System.Drawing.Size(131, 46)
         Me.ButtonRefresh.TabIndex = 20
         Me.ButtonRefresh.Text = "Refresh"
+        Me.ButtonRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ButtonRefresh.UseVisualStyleBackColor = True
         '
         'ButtonUpdate
         '
-        Me.ButtonUpdate.Location = New System.Drawing.Point(1038, 212)
+        Me.ButtonUpdate.Image = Global.tblStudent.My.Resources.Resources.update_32
+        Me.ButtonUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonUpdate.Location = New System.Drawing.Point(1038, 222)
         Me.ButtonUpdate.Name = "ButtonUpdate"
-        Me.ButtonUpdate.Size = New System.Drawing.Size(150, 46)
+        Me.ButtonUpdate.Size = New System.Drawing.Size(131, 46)
         Me.ButtonUpdate.TabIndex = 19
         Me.ButtonUpdate.Text = "Update"
+        Me.ButtonUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ButtonUpdate.UseVisualStyleBackColor = True
         '
         'ButtonClear
         '
-        Me.ButtonClear.Location = New System.Drawing.Point(870, 285)
+        Me.ButtonClear.Image = Global.tblStudent.My.Resources.Resources.clear_32
+        Me.ButtonClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonClear.Location = New System.Drawing.Point(883, 285)
         Me.ButtonClear.Name = "ButtonClear"
-        Me.ButtonClear.Size = New System.Drawing.Size(150, 46)
+        Me.ButtonClear.Size = New System.Drawing.Size(106, 46)
         Me.ButtonClear.TabIndex = 18
         Me.ButtonClear.Text = "Clear"
+        Me.ButtonClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ButtonClear.UseVisualStyleBackColor = True
         '
         'ButtonSidGen
         '
+        Me.ButtonSidGen.Image = Global.tblStudent.My.Resources.Resources.heart_rainbow_32
+        Me.ButtonSidGen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ButtonSidGen.Location = New System.Drawing.Point(421, 84)
         Me.ButtonSidGen.Name = "ButtonSidGen"
         Me.ButtonSidGen.Size = New System.Drawing.Size(150, 46)
         Me.ButtonSidGen.TabIndex = 17
         Me.ButtonSidGen.Text = "Sid Gen"
+        Me.ButtonSidGen.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ButtonSidGen.UseVisualStyleBackColor = True
         '
         'ButtonDelete
         '
-        Me.ButtonDelete.Location = New System.Drawing.Point(708, 356)
+        Me.ButtonDelete.Image = Global.tblStudent.My.Resources.Resources.remove_32
+        Me.ButtonDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonDelete.Location = New System.Drawing.Point(708, 354)
         Me.ButtonDelete.Name = "ButtonDelete"
-        Me.ButtonDelete.Size = New System.Drawing.Size(150, 46)
+        Me.ButtonDelete.Size = New System.Drawing.Size(124, 46)
         Me.ButtonDelete.TabIndex = 16
         Me.ButtonDelete.Text = "Delete"
+        Me.ButtonDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ButtonDelete.UseVisualStyleBackColor = True
         '
         'TextBoxJava
@@ -323,6 +341,7 @@ Partial Class Form1
         '
         'TextBoxName
         '
+        Me.TextBoxName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBoxName.Location = New System.Drawing.Point(197, 151)
         Me.TextBoxName.Name = "TextBoxName"
         Me.TextBoxName.Size = New System.Drawing.Size(374, 39)
@@ -341,6 +360,7 @@ Partial Class Form1
         '
         Me.TextBoxSid.Location = New System.Drawing.Point(197, 88)
         Me.TextBoxSid.Name = "TextBoxSid"
+        Me.TextBoxSid.ReadOnly = True
         Me.TextBoxSid.Size = New System.Drawing.Size(202, 39)
         Me.TextBoxSid.TabIndex = 1
         '
